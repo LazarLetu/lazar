@@ -1,0 +1,20 @@
+Program p1
+const n = 5;
+var
+  i, P, i2: integer;
+  a: array [1..n] of integer;
+begin
+  for i := 1 to n do
+  begin
+    writeln('Введите ', i, ' элемент');
+    readln(a[i]);
+  end;
+  for i := 1 to n do
+  begin
+    if ([a[i]] < 0) and (P <> 1) then
+    begin
+      i2 := i;
+      P := 1;
+    end;
+    writeln('Первое отрицательный элемент равен ', a[i2], 'и его номер', i2);
+  end;     
